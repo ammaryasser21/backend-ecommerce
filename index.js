@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const { error } = require("console");
 const httpStatusText = require("./utils/httpStatusText.js");
 
-// app.use(cors);
+app.use(cors());
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
